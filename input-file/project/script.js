@@ -16,7 +16,7 @@ const createFileList = (input, container) => {
     data.files = [...dt.files];
   }
 
-  const itemTemplate = (file) => {
+  const fileItemTemplate = (file) => {
     return (
       "<li>" + file.name + " <a href='' data-file='" +
       file.name + "'>x</a></li>"
@@ -36,11 +36,8 @@ const createFileList = (input, container) => {
       commitDT(dt);
     },
     render() {
-      let content = "";
-      for (const file of data.files) {
-        content += itemTemplate(file);
-      }
-      container.innerHTML = content;
+      container.innerHTML =
+        [...data.files].map(fileItemTemplate).join();
     }
   }
 }
