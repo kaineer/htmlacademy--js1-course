@@ -19,7 +19,7 @@ const createFileList = (input, container) => {
   const fileItemTemplate = (file) => {
     return (
       "<li>" + file.name + " <a href='' data-file='" +
-      file.name + "'>x</a></li>"
+      file.name + "'></a></li>"
     );
   }
 

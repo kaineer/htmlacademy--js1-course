@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title></title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <form action="">
-    <input type="file" name="files[]" class="input-file" multiple>
+    <input type="file" name="files[]" class="input-file sr-only" multiple id="multiple-input">
+    <label class="file-label" for="multiple-input"><span>Прикрепить файл</span></label>
     <ul class="file-list">
-      <li>filename1.png <a href="">x</a></li>
-      <li>filename2.png <a href="">x</a></li>
+      <li>filename1.png <a href=""></a></li>
+      <li>filename2.png <a href=""></a></li>
     </ul>
   </form>
   <script src="./script.js"></script>
